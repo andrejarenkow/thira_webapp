@@ -16,13 +16,17 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state='collapsed'
 ) 
-col1, col2, col3 = st.columns([2,12,1])
+col1, col2, col3 = st.columns([2,5,2])
 
-col1.image('CDC_THIRA/marca RS23 cor vertical saude_RGB.png', width=200)
+with col1:
+    esquerda, centro, direita = st.columns([2,5,2])
+    centro.image('CDC_THIRA/marca RS23 cor vertical saude_RGB.png', width=200)
 with col2:
     esquerda, centro, direita = st.columns([2,5,2])
     centro.title('THIRA')
-col3.image('CDC_THIRA/US_CDC_logo.svg.png', width=100)
+with col3:
+    esquerda, centro, direita = st.columns([2,5,2])
+    col3.image('CDC_THIRA/US_CDC_logo.svg.png', width=100)
 
 #Aquisição dos dados
 dados = pd.read_csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vTuoMf8l-MlrVDCnklOQeLZ2OILF1GHjJxlLwW_ZiJAeGd5hMtxrRdhIgAlme0JDGVG-T8N2Ul6Fvso/pub?gid=550571158&single=true&output=csv')
