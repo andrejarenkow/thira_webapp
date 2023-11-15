@@ -20,7 +20,7 @@ col1, col2, col3 = st.columns([2,12,1])
 
 col1.image('CDC_THIRA/marca RS23 cor vertical saude_RGB.png', width=200)
 with col2:
-    esquerda, centro, direita = st.columns([2,5,2] 
+    esquerda, centro, direita = st.columns([2,5,2])
     centro.title('THIRA')
 col3.image('CDC_THIRA/US_CDC_logo.svg.png', width=100)
 
