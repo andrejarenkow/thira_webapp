@@ -99,7 +99,7 @@ with col2:
 
 
 col3.subheader('QR Code para o formulário')
-col3.image('CDC_THIRA\qrcode_form.png', width=300)
+col3.image('CDC_THIRA/qrcode_form.png', width=300)
 
    
 
@@ -137,7 +137,7 @@ with col2:
 
 title_alignment= """
 <style>
-#thira {
+thira {
   text-align: center
 }
 
